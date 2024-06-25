@@ -29,44 +29,32 @@ body{
 
 }
 
+.carousel, .carousel-inner > .carousel-item > img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+
 /* Seccion hero */
 .hero{
     --padding-container: 0;
-    height: 100vh;
+    /* height: 100vh; */
     background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 }
 
-.hero__main{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-}
+
 
 .hero__img{
-    width: 45%;
+    width: 100%;
     text-align: center;
     margin: 0;
 }
 
 .hero__picture{
-    max-width: 80%;
+    max-width: 15%;
 }
 
-.hero__texts{
-    width: 45%;
-    color: #fff;
-}
 
-.hero__title{
-    font-size: 4rem;
-}
-
-.hero__copy{
-    font-size: 1.5rem;
-    font-weight: 300;
-}
 
 /* About */
 .title{
@@ -280,30 +268,22 @@ body{
 @media screen and (max-width: 800px){
     .hero{
         height: auto;
-        min-height: 100vh;
+        min-height: 30vh;
         --padding-container: 40px 0;
     }
 
-    .hero__main{
-        justify-content: center;
-    }
+   
 
     .hero__img{
-        width: 60%;
+        width: 100%;
         margin-bottom: 30px;
     }
 
     .hero__picture{
-        max-width: 85%;
+        max-width: 100%;
     }
 
-    .hero__texts{
-        width: 100%;
-    }
-
-    .hero__title{
-        font-size: 3.5rem;
-    }
+   
 
     /* about */
 
@@ -364,16 +344,14 @@ body{
 
 @media screen and (max-width:550px){
     .hero__img{
-        width: 85%;
+        width: 100%;
     }
 
     .hero__picture{
         max-width: 100%;
     }
 
-    .hero__title{
-        font-size: 2.8rem;
-    }
+    
 
     .title{
         font-size: 2.2rem;
